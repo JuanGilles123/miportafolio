@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Tu Nombre</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Usamos la misma hoja de estilos -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- Encabezado simple con un enlace para volver al inicio -->
+        <header class="glass-panel p-4 flex justify-between items-center mb-12">
+            <a href="index.html" class="text-xl md:text-2xl font-bold tracking-wider hover:text-gray-300 transition-colors">
+                &larr; Volver al Inicio
+            </a>
+            <a href="index.html#contacto" class="bg-white text-black font-semibold py-2 px-4 rounded-full hover:bg-gray-200 transition-colors">
+                Contrátame
+            </a>
+        </header>
+
+        <main>
+            <h1 class="text-4xl font-bold text-center mb-12">Todos Mis Proyectos</h1>
+            
+            <!-- Este div se llenará dinámicamente con TODOS los proyectos desde projects.json -->
+            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- El script main.js llenará este espacio -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Usamos el mismo script de JavaScript -->
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>

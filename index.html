@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Jose Gil | Portafolio de Diseño y Desarrollo</title>
+    
+    <!-- Tailwind CSS (para utilidades rápidas de espaciado, etc.) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ENLACE A TU HOJA DE ESTILOS CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body id="home-page">
+    
+    <div class="container mx-auto p-4 md:p-8">
+
+        <!-- ===== SECCIÓN DE NAVEGACIÓN Y ENCABEZADO ===== -->
+        <header id="main-header" class="glass-panel p-4 flex justify-between items-center mb-12 sticky top-4 z-50">
+            <h1 class="text-xl md:text-2xl font-bold tracking-wider">JUAN JOSE GIL</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#proyectos" class="hover:text-gray-300 transition-colors">Proyectos</a>
+                <a href="#sobre-mi" class="hover:text-gray-300 transition-colors">Sobre Mí</a>
+                <a href="#contacto" class="hover:text-gray-300 transition-colors">Contacto</a>
+            </nav>
+            <a href="#contacto" class="bg-white text-black font-semibold py-2 px-4 rounded-full hover:bg-gray-200 transition-colors">
+                Contrátame
+            </a>
+        </header>
+
+        <!-- ===== SECCIÓN DE HÉROE / PRESENTACIÓN ===== -->
+        <main class="text-center my-20 md:my-32">
+            <h2 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tighter">
+                Diseño Gráfico y Desarrollo
+                <br>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-violet-500">
+                    Creatividad & Código
+                </span>
+            </h2>
+            <p class="max-w-2xl mx-auto mt-6 text-lg md:text-xl text-gray-200">
+                <!-- CAMBIA ESTE TEXTO -->
+                Hola, soy Juan Jose Gil . Me especializo en crear experiencias digitales impactantes, desde la identidad visual de una marca hasta el desarrollo de aplicaciones web funcionales, aplicaciones de escritorio y elegantes.
+            </p>
+        </main>
+
+        <!-- ===== SECCIÓN DE PROYECTOS ===== -->
+        <section id="proyectos" class="my-20">
+            <h3 class="text-3xl font-bold text-center mb-12">Mis Proyectos Recientes</h3>
+            
+            <!-- Este DIV ahora está vacío. JavaScript se encargará de llenarlo desde projects.json -->
+            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Los proyectos se cargarán aquí... -->
+            </div>
+
+            <!-- Enlace para ver todos los proyectos -->
+            <div class="text-center mt-12">
+                <a href="proyectos.html" class="glass-panel py-3 px-6 rounded-full hover:bg-white/20 transition-colors">
+                    Ver todos los proyectos
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN SOBRE MÍ ===== -->
+        <section id="sobre-mi" class="my-20 glass-panel p-8 md:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-2">
+                    <h3 class="text-3xl font-bold mb-4">Sobre Mí</h3>
+                    <p class="text-gray-200 mb-4">
+                        <!-- CAMBIA ESTE TEXTO -->
+                        ¡Hola! Soy un apasionado del diseño y la tecnología. Mi objetivo es combinar estética y funcionalidad para crear soluciones memorables.
+                    </p>
+                    <p class="text-gray-200">
+                        <!-- CAMBIA ESTE TEXTO -->
+                        Siempre estoy aprendiendo y explorando nuevas tendencias. ¡Hablemos de cómo podemos colaborar!
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <!-- CAMBIA LA IMAGEN -->
+                    <img src="https://placehold.co/300x300/23a6d5/FFFFFF?text=Tu+Foto" alt="Tu Foto de Perfil" class="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-white/30">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN DE CONTACTO ===== -->
+        <footer id="contacto" class="text-center my-20">
+             <h3 class="text-3xl font-bold mb-4">¿Hablamos?</h3>
+             <p class="text-gray-200 mb-8">Estoy disponible para proyectos freelance y colaboraciones.</p>
+             <!-- CAMBIA TU CORREO -->
+             <a href="mailto:juanjosegilarbelaez@gmail.com" 
+                class="inline-block glass-panel text-lg font-semibold py-4 px-8 rounded-full hover:bg-white/20 transition-colors">
+                juanjosegilarbelaez@gmail.com
+             </a>
+             <div class="flex justify-center space-x-6 mt-12">
+                <!-- CAMBIA LOS ENLACES A TUS REDES SOCIALES -->
+                <a href="#" class="hover:text-gray-300">Behance</a>
+                <a href="#" class="hover:text-gray-300">GitHub</a>
+             </div>
+        </footer>
+
+    </div>
+
+    <!-- ENLACE A TU ARCHIVO JAVASCRIPT -->
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>

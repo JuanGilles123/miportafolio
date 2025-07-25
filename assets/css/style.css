@@ -1,0 +1,67 @@
+/* Estilos base y para el efecto Glassmorphism */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Fondo degradado dinámico para que el efecto "glass" resalte */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white; /* Color de texto por defecto para toda la página */
+    /* Para asegurar que el scroll sea suave al hacer click en los enlaces del nav */
+    scroll-behavior: smooth;
+}
+
+/* Animación para el fondo degradado */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Clase principal para los paneles de cristal */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1); /* Color de fondo semi-transparente */
+    backdrop-filter: blur(20px); /* El efecto de desenfoque clave */
+    -webkit-backdrop-filter: blur(20px); /* Para compatibilidad con Safari */
+    border-radius: 1.5rem; /* Bordes bien redondeados */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil que atrapa la luz */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); /* Sombra suave */
+    transition: background 0.3s ease, transform 0.3s ease-out; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse sobre las tarjetas de proyecto */
+.project-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Clase que se añade con JavaScript cuando el usuario hace scroll */
+.header-scrolled {
+    background: rgba(30, 30, 40, 0.4); /* Un fondo un poco más oscuro al hacer scroll */
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- ANIMACIÓN DE ENTRADA PARA LAS TARJETAS --- */
+
+/* 1. Definición de la animación */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. Estado inicial de las tarjetas (antes de la animación) */
+/* Las tarjetas empiezan invisibles y ligeramente desplazadas hacia abajo */
+.project-card {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* 3. Clase que dispara la animación (se añade con JavaScript) */
+.fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+}

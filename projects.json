@@ -1,0 +1,14 @@
+[
+  {
+    "image": "assets/images/projects/logo-blanco.png",
+    "title": "Logo Personal",
+    "description": "Creación de un logotipo moderno y minimalista que representa mi marca personal como diseñador y desarrollador.",
+    "tags": ["Diseño Gráfico", "Branding"]
+  },
+  {
+    "image": "https://placehold.co/600x400/e73c7e/FFFFFF?text=Proyecto+Web",
+    "title": "Página Web para Cafetería",
+    "description": "Diseño y desarrollo de un sitio web para una cafetería local, enfocado en la experiencia de usuario y la visualización del menú.",
+    "tags": ["Desarrollo Web", "UI/UX"]
+  }
+]
