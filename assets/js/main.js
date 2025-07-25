@@ -27,8 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const allProjects = await response.json();
 
-            // Si hay un límite, cortamos el array. Si no, usamos todos los proyectos.
-            // .slice(0, limit) toma los elementos desde el inicio hasta el límite.
             const projectsToDisplay = limit ? allProjects.slice(0, limit) : allProjects;
 
             projectsContainer.innerHTML = ''; // Limpiamos el contenedor
@@ -36,8 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
             projectsToDisplay.forEach(project => {
                 const card = document.createElement('div');
                 card.className = 'glass-panel p-6 project-card flex flex-col';
+                
+                // ===== LÍNEA MODIFICADA =====
+                // He cambiado 'object-cover' por 'object-contain' para que se vea la imagen completa.
                 card.innerHTML = `
-                    <img src="${project.image}" alt="${project.title}" class="rounded-xl mb-4 w-full h-48 object-cover">
+                    <img src="${project.image}" alt="${project.title}" class="rounded-xl mb-4 w-full h-48 object-contain">
                     <h4 class="text-xl font-bold mb-2">${project.title}</h4>
                     <p class="text-gray-300 mb-4 flex-grow">${project.description}</p>
                     <div class="flex items-center justify-between mt-auto">
