@@ -3,12 +3,14 @@
     "image": "assets/images/projects/logo-blanco.png",
     "title": "Logo",
     "description": "Creación de un logotipo moderno y minimalista que representa mi marca personal como diseñador y desarrollador.",
-    "tags": ["Diseño Gráfico", "Branding"]
+    "tags": ["Diseño Gráfico", "Branding"],
+    "link": "#"
   },
   {
-    "image": "https://placehold.co/600x400/e73c7e/FFFFFF?text=Proyecto+Web",
-    "title": "Página Web ",
-    "description": "Diseño y desarrollo de un sitio web para una cafetería local, enfocado en la experiencia de usuario y la visualización del menú.",
-    "tags": ["Desarrollo Web", "UI/UX"]
+    "image": "https://via.placeholder.com/600x400/667eea/ffffff?text=FluxSoft+Landing",
+    "title": "FluxSoft Landing Page",
+    "description": "Landing page profesional para software FluxSoft. Diseño minimalista con enfoque en conversión, animaciones suaves y experiencia de usuario optimizada para ventas.",
+    "tags": ["Desarrollo Web", "Landing Page", "JavaScript", "Responsive"],
+    "link": "https://landingpagedemojuan.netlify.app/"
   }
 ]

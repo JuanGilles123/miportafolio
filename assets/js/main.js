@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="flex flex-wrap gap-2">
                             ${project.tags.map(tag => `<span class="bg-white/20 text-xs font-semibold px-2 py-1 rounded-full">${tag}</span>`).join('')}
                         </div>
-                        <a href="#" class="text-white font-semibold hover:underline whitespace-nowrap">Ver más &rarr;</a>
+                        <a href="${project.link || '#'}" ${project.link && project.link !== '#' ? 'target="_blank" rel="noopener noreferrer"' : ''} class="text-white font-semibold hover:underline whitespace-nowrap">Ver más &rarr;</a>
                     </div>
                 `;
                 projectsContainer.appendChild(card);
